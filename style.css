@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #F8F4EF;
+    color: #2D1E16;
+}
+
+header {
+    width: 100%;
+    padding: 20px 10%;
+    background: #8B5FBF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #E9D5FF;
+}
+
+.social-header {
+    display: flex;
+    gap: 18px;
+}
+
+.social-header a {
+    color: white;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.social-header a:hover {
+    color: #E9D5FF;
+    transform: translateY(-3px);
+}
+
+.hero {
+    min-height: 100vh;
+    padding: 120px 10% 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    color: #8B5FBF;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn,
+.btn-outline {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.btn {
+    background: #8B5FBF;
+    color: white;
+}
+
+.btn:hover {
+    background: #6F42C1;
+}
+
+.btn-outline {
+    border: 2px solid #8B5FBF;
+    color: #8B5FBF;
+}
+
+.btn-outline:hover {
+    background: #8B5FBF;
+    color: white;
+}
+
+.hero-image img {
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #CDB4DB;
+}
+
+section {
+    padding: 90px 10%;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 34px;
+    color: #8B5FBF;
+    margin-bottom: 35px;
+}
+
+#sobre p {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.skills-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.skills-box {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.skills-box h3 {
+    color: #8B5FBF;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.skills-box h3 i {
+    margin-right: 10px;
+}
+
+.skills-box ul {
+    list-style: none;
+}
+
+.skills-box li {
+    background: #F8F4EF;
+    margin-bottom: 12px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border-left: 4px solid #CDB4DB;
+    font-weight: 500;
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.projeto {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.projeto:hover {
+    transform: translateY(-8px);
+}
+
+.projeto h3 {
+    color: #8B5FBF;
+    margin-bottom: 15px;
+}
+
+.projeto p {
+    line-height: 1.7;
+}
+
+#contato {
+    text-align: center;
+}
+
+.contato-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contato-container p {
+    font-size: 18px;
+}
+
+.contato-container i {
+    color: #8B5FBF;
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.contato-container a {
+    color: #4A3728;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.contato-container a:hover {
+    color: #8B5FBF;
+}
+
+footer {
+    background: #2D1E16;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 180px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero-image img {
+        width: 260px;
+        height: 260px;
+    }
+}
+
+@media (max-width: 500px) {
+    section {
+        padding: 70px 6%;
+    }
+
+    header {
+        padding: 18px 6%;
+    }
+
+    .hero {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .btn,
+    .btn-outline {
+        display: block;
+        margin: 10px auto;
+        width: 220px;
+    }
+}
